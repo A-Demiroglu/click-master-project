@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CLICKMASTER</title>
+    <!-- Externe verwijzing naar het CSS-bestand -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <header>
+        <h1>CLICKMASTER</h1>
+    </header>
+    <main>
+        <div id="timer">Tijd: 15</div>
+        <div id="score">Totale Kliks: 0</div>
+        <div id="cps">Clicks per seconde: 0</div>
+        <button id="clickButton">Kliks</button>
+        <button id="resetButton">Reset Game</button>
+        <div id="scoreboard">Highscore: <span id="scoreHistory">0</span></div>
+    </main>
+    <footer>
+        <p>Sammy Sayed & Azad Demiroglu &copy;</p>
+    </footer>
+
+    <!-- Externe verwijzing naar het JavaScript-bestand -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
