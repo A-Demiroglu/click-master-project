@@ -17,7 +17,7 @@ let timeLeft = 15;
 let timerInterval;
 
 function startGame() {
-    timerInterval = setInterval(function() {
+    timerInterval = setInterval(function () {
         timeLeft--;
         document.getElementById('timer').innerText = 'Tijd: ' + timeLeft;
         if (timeLeft <= 0) {
@@ -26,3 +26,29 @@ function startGame() {
         }
     }, 1000);
 }
+
+startGame();
+
+let clicks = 0;
+let cpsInterval;
+
+function startCPS() {
+    cpsInterval = setInterval(function () {
+        let cps = clicks / (15 - timeLeft);
+        document.getElementById('cps').innerText = 'Clicks per seconde: ' + cps.toFixed(3);
+    }, 20);
+}
+
+startCPS();
+let previousScores = [];
+
+function updateScoreboard(newScore) {
+    previousScores.push(newScore);
+    document.getElementById('scoreHistory').innerText = previousScores.join(', ');
+}
+
+document.getElementById('resetButton').addEventListener('click', function () {
+    updateScoreboard(score);
+    resetGame();
+});
+
