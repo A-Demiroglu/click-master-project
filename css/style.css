@@ -1,65 +1,72 @@
 body {
     font-family: Arial, sans-serif;
     background-color: black;
-    color: #2f2f2f;
+    color: white;
     margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Zorgt ervoor dat main de resterende ruimte vult */
     padding: 20px;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 3em;
-    color: #c0392b;
+    font-size: 2.5em;
+    color: red;
+    margin-bottom: 10px;
 }
 
-#score,
-#cps,
-#timer {
-    font-size: 2em;
-    margin: 20px 0;
+#timer, #score, #cps {
+    font-size: 1.5em;
+    margin: 5px 0;
     transition: color 0.3s;
 }
 
 button {
-    padding: 50px 100px;
-    font-size: 3em;
+    padding: 30px 60px;
+    font-size: 2em;
     cursor: pointer;
-    background-color: #4db6e4;
+    background-color: green;
     color: white;
     border: none;
     border-radius: 15px;
     transition: background-color 0.3s, transform 0.3s;
-    display: block;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 button:hover {
-    background-color: #42a5f5;
-    transform: scale(1.1);
+    background-color: gold;
+    transform: scale(1.05);
 }
 
 #resetButton {
-    padding: 15px 30px;
-    font-size: 1.5em;
-    background-color: #221fe0;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: green;
     border-radius: 5px;
     color: white;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #resetButton:hover {
-    background-color: #461ce0;
+    background-color: gold;
 }
 
 footer {
-    margin-top: 40px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #666;
-}
-
-#scoreboard {
-    margin-top: 30px;
-    font-size: 1.5em;
-    color: #d32f2f;
+    padding: 10px 0;
+    text-align: center;
 }
