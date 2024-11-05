@@ -4,17 +4,17 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    text-align: center; /* Centreert alle tekst in het midden */
+    display: flex; /* Maakt van body een Flexbox-container */
+    flex-direction: column; /* Plaatst elementen verticaal in de container */
+    min-height: 100vh; /* Zorgt ervoor dat body ten minste de volledige schermhoogte vult */
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Maakt van main een Flexbox-container */
+    flex-direction: column; /* Plaatst elementen verticaal in de main-container */
+    align-items: center; /* Centreert items horizontaal in de container */
+    justify-content: center; /* Centreert items verticaal in de container */
     flex: 1; /* Zorgt ervoor dat main de resterende ruimte vult */
     padding: 20px;
     box-sizing: border-box;
@@ -29,39 +29,39 @@ h1 {
 #timer, #score, #cps {
     font-size: 1.5em;
     margin: 5px 0;
-    transition: color 0.3s;
+    transition: color 0.3s; /* Zorgt voor een geleidelijke kleurverandering over 0,3 seconden */
 }
 
 button {
     padding: 30px 60px;
     font-size: 2em;
-    cursor: pointer;
+    cursor: pointer; /* Verandert de cursor in een pointer bij hover om aan te geven dat het element klikbaar is */
     background-color: green;
     color: white;
     border: none;
-    border-radius: 15px;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 15px; /* Maakt de hoeken van de knop rond */
+    transition: background-color 0.3s, transform 0.3s; /* Zorgt voor een geleidelijke verandering in achtergrondkleur en grootte bij hover */
     margin: 15px auto;
 }
 
 button:hover {
-    background-color: gold;
-    transform: scale(1.05);
+    background-color: gold; /* Verandert de achtergrondkleur van de knop naar goud bij hover */
+    transform: scale(1.05); /* Vergroot de knop tot 105% van zijn originele grootte bij hover */
 }
 
 #resetButton {
     padding: 10px 20px;
     font-size: 1em;
     background-color: green;
-    border-radius: 5px;
+    border-radius: 5px; /* Maakt de hoeken van de reset-knop licht afgerond */
     color: white;
     border: none;
-    cursor: pointer;
+    cursor: pointer; /* Verandert de cursor in een pointer bij hover om aan te geven dat de knop klikbaar is */
     margin-top: 15px;
 }
 
 #resetButton:hover {
-    background-color: gold;
+    background-color: gold; /* Verandert de achtergrondkleur van de reset-knop naar goud bij hover */
 }
 
 footer {
